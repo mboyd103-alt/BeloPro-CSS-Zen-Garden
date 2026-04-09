@@ -46,7 +46,7 @@ h1, h2, h3, h4, h5, h6 {
 	Thistle 	  #CBC4D8	rgb(203, 196, 216)
 */
 body {
-  background-color: #F0F0E3;
+   background-color: red !important;
 }
 /*DO NOT put heights and widths in the body*/
 /*What can go in body: colors, fonts, backgrounds*/
