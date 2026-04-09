@@ -75,7 +75,7 @@ h1 {
   font-size: 450%;
   letter-spacing: 0.02em;
   text-align: center;
-  background-image:;
+  background-image:url("colorfulflowergarden.jpg");
   background-repeat: no-repeat;
   background-size: 1800px 300px;
   min-height: 20vh;
@@ -123,7 +123,7 @@ li {
 .main {}
 .sidebar {
   line-height: 1.5em;
-  background-image: url("../img/gardenpath.jpg");
+  background-image: url("gardenpath.jpg");
   background-repeat: no-repeat;
   background-size: 1800px 500px;
   min-height: 32vh;
