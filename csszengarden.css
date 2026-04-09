@@ -1,0 +1,293 @@
+@charset "UTF-8";
+/*Place any google fonts here*/
+@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Rye&display=swap');
+/*CSS Reset - This is wipes out default browser settings that could cause you issues.*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+/*Box-Sizing: This will help you with your box-model math*/
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+/*Links - I took off that awful underline and changed the link color.*/
+a {
+  text-decoration: none;
+  color: pink;
+}
+/*Non Bold Headings*/
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+/*Things I added do not count toward your line limit.*/
+/*	
+	Your Zen Garden CSS
+	This is the CSS for your zen garden.
+
+	Dark Magenta  #A31895	rgb(163, 24, 149)
+	Soft Linen 	  #F0F0E3	rgb(240, 240, 227)
+	Dark Amaranth #8C0C34	rgb(140, 12, 52)
+	Olive Leaf 	  #365B03	rgb(54, 91, 3)
+	Muted Olive   #84B475	rgb(132, 180, 117)
+	Inferno 	  #A51300	rgb(165, 19, 0)
+	White 	      #FFFFFF	rgb(255, 255, 255)
+	Black 		  #000000	rgb(0, 0, 0)
+	Thistle 	  #CBC4D8	rgb(203, 196, 216)
+*/
+body {
+  background-color: #F0F0E3;
+}
+/*DO NOT put heights and widths in the body*/
+/*What can go in body: colors, fonts, backgrounds*/
+/*Study the HTML and pull tags, ids, and classes to use. I have a couple html selectors below to get you started. You will need to call more than this for your designs.*/
+a {
+  color: #A51300;
+  font-family: "Chewy", system-ui;
+  border: none;
+  text-decoration: none;
+}
+p {
+  font-family: "Chewy", system-ui;
+  margin: 1rem 0 1rem 0;
+  line-height: 1.5em;
+  color: #365B03;
+  font-size: 110%;
+  letter-spacing: 0.02em;
+  text-align: justify;
+  padding: 1em;
+  max-width: 960px;
+}
+h1 {
+  font-family: "Rye", serif;
+  color: #A31895;
+  margin: 1.5rem 0 0.5em 0;
+  font-size: 450%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  background-image: url("../img/colorfulflowergarden.jpg");
+  background-repeat: no-repeat;
+  background-size: 1800px 300px;
+  min-height: 20vh;
+  padding-bottom: 310px;
+  background-position: center bottom;
+}
+h2 {
+  font-family: "Chewy", system-ui;
+  color: #365B03;
+  margin: 1.5rem 0 1rem 0;
+  font-size: 350%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  padding: 1em;
+}
+h3 {
+  font-family: "Chewy", system-ui;
+  color: #8C0C34;
+  margin: 1.5rem 0 1rem 0;
+  font-size: 150%;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+ul {
+  margin: 1rem 0 1rem 0;
+  letter-spacing: 0.02em;
+  font-family: "Chewy", system-ui;
+}
+li {
+  margin: 0.25rem 0 0.25rem 2em;
+  letter-spacing: 0.02em;
+  font-family: "Chewy", system-ui;
+}
+/*Level 1*/
+.page-wrapper {
+  overflow: auto;
+  column-count: auto;
+  margin: 0 auto;
+  min-width: 960px;
+}
+/*Level 2*/
+.intro {
+  margin: 0 auto;
+}
+.main {}
+.sidebar {
+  line-height: 1.5em;
+  background-image: url("../img/gardenpath.jpg");
+  background-repeat: no-repeat;
+  background-size: 1800px 500px;
+  min-height: 32vh;
+  background-position: right bottom;
+}
+.sidebar ul {}
+.sidebar li {
+  list-style: none;
+}
+/*Level 3*/
+header {}
+.summary {
+  width: 50%;
+  margin: 0 auto;
+  background-color: #F0F0E3;
+}
+.preamble {
+  border: #CBC4D8 solid 4px;
+  border-radius: 1em;
+  padding: 2rem;
+  width: 50%;
+  margin: 0 auto;
+  background-color: #F0F0E3;
+}
+.explanation {
+  margin: 0 20em 0 20em;
+}
+.benefits {
+  margin: 0 20em 0 20em;
+}
+.requirements {
+  background-color: #84B475;
+  padding: 2rem;
+  background-size: cover;
+  line-height: 1.5em;
+}
+.requirements p {
+  color: #000000;
+  margin: 0 auto;
+}
+.requirements h3 {
+  width: 100%;
+  margin: 0 auto;
+}
+footer {
+  font-size: 200%;
+  min-height: 20vh;
+  word-spacing: 10rem;
+  margin: 0 5em 0 5em;
+  display: flex;
+  padding: 1em;
+}
+footer a {
+  padding: 3em;
+  background-image: url("../img/flowericon.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-align: center;
+}
+.explanation {
+  padding: 5em 0 5em 0;
+  background-image: url("../img/asinglerose.jpg");
+  background-repeat: no-repeat;
+  padding-right: 320px;
+  background-size: 300px;
+  min-height: 32vh;
+  background-position: right center;
+}
+.participation {
+  padding: 5em 0 5em 0;
+  background-image: url("../img/girlsmellingflowers.jpg");
+  background-repeat: no-repeat;
+  padding-left: 320px;
+  background-size: 250px;
+  min-height: 32vh;
+  background-position: left center;
+  max-width: 960px;
+  margin: 0 20em 0 20em;
+}
+.benefits {
+  padding: 0 0 5em 0;
+  background-image: url("../img/happygirlinflowerfield.jpg");
+  background-repeat: no-repeat;
+  padding-right: 320px;
+  background-size: 300px;
+  background-position: right top;
+}
+.select {
+  text-align: left;
+  padding: 0 0 0 1em;
+}
+.design-selection {
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 2em 0 0 2em;
+  margin-bottom: -1em;
+}
+.design-selection a {
+  text-decoration: none;
+  color: #000000;
+  margin: 0;
+  border-bottom: solid;
+}
+.design-archives {
+  text-align: left;
+  padding: 2em 0 0 2em;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin-top: -12px;
+}
+.design-archives a {
+  text-decoration: none;
+  color: black;
+  border-bottom: solid;
+  margin-bottom: -2em;
+}
+.design-archives ul {
+  display: flex;
+  margin-bottom: 2em;
+  padding-bottom: 0;
+}
+.design-archives li {}
+.next, .viewall {
+  display: flex;
+}
+.archives {}
+.design-selection {}
+.zen-resources {
+  background-color: #84B475;
+  line-height: 0.5em;
+  padding: 1em 1em 0em 1em;
+  display: flex;
+  text-align: center;
+  margin-bottom: 0;
+  font-size: 0.90em;
+}
+.zen-resources ul {
+  display: flex;
+  width: 960px;
+  margin-bottom: 0;
+  text-align: center;
+  margin: 0 0 0 1em;
+}
+.zen-resources li {
+  list-style: none;
+  font-weight: 300;
+  font-size: 1.1em;
+  margin-bottom: 0em;
+  padding: 1em 0em 1em 0em;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1em;
+}
+.resources {
+  color: #365B03;
+  font-size: 110%;
+  width: 960px;
+  text-align: left;
+  margin-bottom: 0;
+  margin: 1em 0 1em 0;
+}
+abbr {
+  text-decoration: none;
+}
+/*576px*/
